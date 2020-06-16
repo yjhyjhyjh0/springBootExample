@@ -52,3 +52,12 @@ Q6-Difference between @RunWith(SpringRunner.class) and @RunWith(SpringJUnit4Clas
 There is no difference, from the javadoc:  
 SpringRunner is an alias for the SpringJUnit4ClassRunner.  
 https://stackoverflow.com/questions/47446529/what-is-the-difference-between-springjunit4classrunner-and-springrunner 
+
+Q7-How to write unit test on controller?  
+https://howtodoinjava.com/spring-boot2/testing/rest-controller-unit-test-example/  
+While writing junit test for a rest controller method, we shall keep in mind that:  
+A unit test is supposed to test only a certain part of code (i.e. code written in controller class), so we shall mock all the dependencies injected and used in controller class.  
+If the test utilizes other dependencies (e.g. database/network) then it is integration testing and not unit testing.  
+We should not use any webserver otherwise it will make the unit testing slow.  
+Each unit test should be independent of other tests.  
+By definition, unit tests should be fast.  
