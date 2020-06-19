@@ -1,4 +1,6 @@
-package contacts;
+package com.example.contacts;
+
+import javax.persistence.Table;
 
 public class Contact {
     private Long id;

@@ -1,5 +1,8 @@
-package unit;
+package com.example.unit;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class EmployDAO {
 
     public Employees getAllEmployees() {

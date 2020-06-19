@@ -1,4 +1,4 @@
-package unit;
+package com.example.unit;
 
 public class Employee {
     private int id;

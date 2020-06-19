@@ -1,7 +1,6 @@
-import unit.EmployDAO;
-import unit.EmployeeController;
-import unit.Employee;
-import unit.Employees;
+package com.example.unit;
+
+import com.example.unit.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -22,11 +21,11 @@ import static org.mockito.Mockito.when;
  * https://howtodoinjava.com/spring-boot2/testing/rest-controller-unit-test-example/
  * While writing junit test for a rest controller method, we shall keep in mind that:
  *
- * A unit test is supposed to test only a certain part of code (i.e. code written in controller class), so we shall mock all the dependencies injected and used in controller class.
- * If the test utilizes other dependencies (e.g. database/network) then it is integration testing and not unit testing.
- * We should not use any webserver otherwise it will make the unit testing slow.
- * Each unit test should be independent of other tests.
- * By definition, unit tests should be fast.
+ * A com.example.unit test is supposed to test only a certain part of code (i.e. code written in controller class), so we shall mock all the dependencies injected and used in controller class.
+ * If the test utilizes other dependencies (e.g. database/network) then it is integration testing and not com.example.unit testing.
+ * We should not use any webserver otherwise it will make the com.example.unit testing slow.
+ * Each com.example.unit test should be independent of other tests.
+ * By definition, com.example.unit tests should be fast.
  */
 @RunWith(MockitoJUnitRunner.class)
 public class EmployeeControllerTest {

@@ -1,4 +1,4 @@
-package contacts;
+package com.example.contacts;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/contact")
 public class ContactController {
     private ContactRepository contactRepo;
 
